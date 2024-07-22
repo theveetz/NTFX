@@ -1,0 +1,49 @@
+.starCopy,
+.starCopy1,
+.starCopy2,
+.starCopy3,
+.starCopy4 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  min-height: 24px;
+}
+.firstStarRow,
+.secondStarRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.secondStarRow {
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.firstStarRow {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.maecenasConvallisNon {
+  align-self: stretch;
+  position: relative;
+  line-height: 32px;
+}
+.firstStarRowParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  min-width: 318px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-500);
+  font-family: var(--font-anybody);
+}
+@media screen and (max-width: 450px) {
+  .firstStarRowParent {
+    gap: var(--gap-base);
+  }
+}

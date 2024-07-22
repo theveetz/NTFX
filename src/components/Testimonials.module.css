@@ -1,0 +1,115 @@
+.testimonialOneImageAndNameParent,
+.testimonialTwo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.testimonialTwo {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-5xl);
+  box-sizing: border-box;
+}
+.testimonialOneImageAndNameParent {
+  width: 560px;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+  min-width: 560px;
+}
+.theRobustAnd,
+.usingBasicSkills {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-family: inherit;
+}
+.theRobustAnd {
+  font-size: inherit;
+  line-height: 130%;
+  font-weight: 700;
+}
+.usingBasicSkills {
+  font-size: var(--font-size-5xl);
+  line-height: 34px;
+  font-weight: 400;
+  color: var(--color-300);
+}
+.testimonialOneInner,
+.theRobustAndHighlyCustomizParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.theRobustAndHighlyCustomizParent {
+  align-self: stretch;
+  gap: var(--gap-5xl);
+}
+.testimonialOneInner {
+  width: 648px;
+  padding: var(--padding-11xl) 0 0;
+  box-sizing: border-box;
+  min-width: 648px;
+  max-width: 100%;
+  font-size: var(--font-size-29xl);
+  color: var(--color-500);
+}
+.testimonialOne,
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.testimonialOne {
+  width: 1320px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.testimonials {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-181xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white1);
+  font-family: var(--font-anybody);
+}
+@media screen and (max-width: 1275px) {
+  .testimonialOneImageAndNameParent,
+  .testimonialOneInner {
+    flex: 1;
+  }
+  .testimonialOne {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .testimonialOneImageAndNameParent {
+    min-width: 100%;
+  }
+  .theRobustAnd {
+    font-size: var(--font-size-19xl);
+    line-height: 50px;
+  }
+  .testimonialOneInner {
+    min-width: 100%;
+  }
+  .testimonials {
+    padding-bottom: var(--padding-111xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .theRobustAnd {
+    font-size: var(--font-size-10xl);
+    line-height: 37px;
+  }
+  .usingBasicSkills {
+    font-size: var(--font-size-lgi);
+    line-height: 27px;
+  }
+}
